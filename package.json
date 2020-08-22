@@ -4,7 +4,8 @@
   "description": "[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3e015a7918974f3e86e50e243c28700d)](https://app.codacy.com/gh/BuildForSDGCohort2/Team-031-Group-A-backend?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDGCohort2/Team-031-Group-A-backend&utm_campaign=Badge_Grade_Settings)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "build": "babel --delete-dir-on-start --out-dir dist --copy-files --ignore \"**/__tests__/**,**/__mocks__/**\" --no-copy-ignored src"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,12 @@
     "@babel/core": "^7.11.4",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "babel-loader": "^8.1.0",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "jest": "^26.4.1"
+    "jest": "^26.4.1",
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "axios": "^0.20.0",
