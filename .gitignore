@@ -1,6 +1,9 @@
 # Dependency directories
 node_modules/
+.env
+package-lock.json
+dist
 
 # Logs
 logs
-*.log
+app.log
